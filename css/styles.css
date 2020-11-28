@@ -573,6 +573,9 @@ pre code {
     max-width: 1140px;
   }
 }
+
+.modal-content .container {max-width: 100%}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -10088,9 +10091,9 @@ img::-moz-selection {
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
-  }
+    opacity: 0.0;
+    transition: font-size 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  } 
   #mainNav .navbar-brand img {
     height: 2rem;
     transition: height 0.3s ease-in-out;
@@ -10101,6 +10104,7 @@ img::-moz-selection {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
+    opacity: 1.0;
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
@@ -10173,7 +10177,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(211, 74, 39, 0.9);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -10207,8 +10211,8 @@ header.masthead .masthead-heading {
   max-width: 100vw;
 }
 .portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
@@ -10233,8 +10237,8 @@ header.masthead .masthead-heading {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
   background-color: transparent;
 }
@@ -10481,4 +10485,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* YouTube */
+.youtube {
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
