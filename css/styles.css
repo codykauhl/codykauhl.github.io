@@ -9989,7 +9989,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10045,6 +10045,7 @@ img::-moz-selection {
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin-bottom: 10px;
   border-radius: 100%;
 }
 
